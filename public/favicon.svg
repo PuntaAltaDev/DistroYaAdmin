@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130">
+  <!-- El carrito de DistroYa: mismo dibujo que src/components/ui/logo.tsx. -->
+  <rect width="130" height="130" rx="30" fill="#041F21" />
+  <polygon points="44,52 98,52 90,78 51,78" fill="#18A4A3" />
+  <path d="M26 36H40L51 78H90L98 52H44" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="58" cy="94" r="7" fill="#7FE0D8" />
+  <circle cx="84" cy="94" r="7" fill="#7FE0D8" />
+</svg>
