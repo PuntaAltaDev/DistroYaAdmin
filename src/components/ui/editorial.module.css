@@ -1,0 +1,102 @@
+.barra {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--color-background);
+  border-bottom: var(--border-hairline) solid var(--color-border);
+  transition: background-color var(--duration-base) var(--easing);
+}
+
+.interior {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm) var(--space-xl);
+  max-width: var(--size-content);
+  min-height: var(--size-bar-height);
+  margin: 0 auto;
+  padding: var(--space-sm) var(--space-xl);
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.navegacion {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.derecha {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-left: auto;
+}
+
+.link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  border: none;
+  background: none;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color var(--duration-fast) var(--easing);
+}
+
+.link:hover,
+.activo {
+  color: var(--color-text);
+}
+
+/* La sección actual se marca con una línea turquesa abajo. */
+.link::after {
+  content: '';
+  position: absolute;
+  left: var(--space-md);
+  right: var(--space-md);
+  bottom: 0;
+  height: var(--border-strong);
+  background: var(--color-primary);
+  transform: scaleX(0);
+  transition: transform var(--duration-base) var(--easing);
+}
+
+.activo::after {
+  transform: scaleX(1);
+}
+
+.botonIcono {
+  display: inline-flex;
+  padding: var(--space-sm);
+  border: none;
+  border-radius: var(--radius-pill);
+  background: none;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background-color var(--duration-fast) var(--easing);
+}
+
+.botonIcono:hover {
+  background: var(--color-surface);
+}
+
+.titular {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  animation: aparecer var(--duration-slow) var(--easing) both;
+}
+
+.antetitulo {
+  margin-bottom: var(--space-sm);
+  text-transform: uppercase;
+}

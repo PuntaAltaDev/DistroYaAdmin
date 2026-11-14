@@ -1,0 +1,68 @@
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.etiqueta {
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+}
+
+.linea {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  border-bottom: var(--border-hairline) solid var(--color-border-strong);
+}
+
+/* La línea turquesa crece desde la izquierda al escribir. */
+.linea::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(-1 * var(--border-hairline));
+  height: var(--border-strong);
+  background: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--duration-base) var(--easing);
+}
+
+.linea:focus-within::after {
+  transform: scaleX(1);
+}
+
+.conError {
+  border-bottom-color: var(--color-danger);
+}
+
+.conError::after {
+  background: var(--color-danger);
+}
+
+.icono {
+  align-self: center;
+  color: var(--color-text-muted);
+}
+
+.entrada {
+  flex: 1;
+  min-width: 0;
+  min-height: var(--size-input-height);
+  padding: var(--space-sm) 0;
+  border: none;
+  background: transparent;
+  outline: none;
+  resize: vertical;
+}
+
+textarea.entrada {
+  min-height: var(--size-textarea);
+}
+
+.entrada::placeholder {
+  color: var(--color-text-muted);
+}

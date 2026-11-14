@@ -1,0 +1,77 @@
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  min-height: var(--size-button-height);
+  padding: 0 var(--space-xl);
+  border: var(--border-hairline) solid transparent;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  font-weight: var(--font-semibold);
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    transform var(--duration-fast) var(--easing),
+    background-color var(--duration-fast) var(--easing),
+    border-color var(--duration-fast) var(--easing),
+    color var(--duration-fast) var(--easing);
+}
+
+.boton:active:not(:disabled) {
+  transform: scale(var(--press-scale));
+}
+
+.boton:disabled {
+  cursor: not-allowed;
+  color: var(--color-text-muted);
+  border-color: var(--color-border);
+  background: var(--color-surface-alt);
+}
+
+.accion {
+  background: var(--color-action-bg);
+  color: var(--color-action-text);
+}
+
+.flecha {
+  color: var(--color-action-accent);
+  transition: transform var(--duration-base) var(--easing);
+}
+
+.accion:hover:not(:disabled) .flecha {
+  transform: translateX(var(--space-xs));
+}
+
+.accion:disabled .flecha {
+  color: inherit;
+}
+
+.secundario {
+  border-color: var(--color-border-strong);
+  color: var(--color-text);
+}
+
+.peligro {
+  border-color: var(--color-danger);
+  color: var(--color-danger);
+}
+
+.secundario:hover:not(:disabled),
+.peligro:hover:not(:disabled) {
+  background: var(--color-surface);
+}
+
+.texto {
+  padding: 0 var(--space-sm);
+  color: var(--color-primary-text);
+}
+
+.texto:hover:not(:disabled) {
+  text-decoration: underline;
+}
+
+.texto:disabled {
+  background: transparent;
+  border-color: transparent;
+}

@@ -1,0 +1,31 @@
+.dialogo {
+  width: 100%;
+  max-width: var(--size-narrow);
+  padding: 0;
+  border: var(--border-hairline) solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+.dialogo[open] {
+  animation: aparecer var(--duration-base) var(--easing);
+}
+
+.dialogo::backdrop {
+  background: var(--color-overlay);
+}
+
+.caja {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  padding: var(--space-xl);
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: var(--space-sm);
+}
