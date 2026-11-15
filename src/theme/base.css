@@ -1,0 +1,70 @@
+/* Estilos de base. Solo usa las variables del tema (ver `css.ts`). */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+  transition:
+    background-color var(--duration-base) var(--easing),
+    color var(--duration-base) var(--easing);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  color: var(--color-primary-text);
+}
+
+:focus-visible {
+  outline: var(--border-strong) solid var(--color-primary);
+  outline-offset: var(--border-strong);
+}
+
+::selection {
+  background: var(--color-primary-soft);
+}
+
+/* Lo que entra a la pantalla sube apenas y aparece. */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(var(--rise));
+  }
+}
+
+/* Solo para lectores de pantalla. */
+.solo-lector {
+  position: absolute;
+  width: var(--border-hairline);
+  height: var(--border-hairline);
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

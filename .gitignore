@@ -1,0 +1,22 @@
+# dependencias
+node_modules/
+
+# build
+dist/
+dist-ssr/
+
+# logs
+*.log
+
+# archivos de entorno locales (secretos)
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# editores
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+.DS_Store

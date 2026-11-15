@@ -1,0 +1,11 @@
+.columna {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xxs);
+}
+
+.rubros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}

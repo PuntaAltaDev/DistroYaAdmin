@@ -1,0 +1,59 @@
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  padding: var(--space-xl);
+  border: var(--border-hairline) solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  animation: aparecer var(--duration-slow) var(--easing) both;
+  transition: border-color var(--duration-base) var(--easing);
+}
+
+.tarjeta:hover {
+  border-color: var(--color-border-strong);
+}
+
+.cabecera {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xxs);
+}
+
+.datos {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin: 0;
+}
+
+.dato {
+  display: flex;
+  flex-direction: column;
+}
+
+.dato dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.etiqueta {
+  color: var(--color-text-secondary);
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.falta {
+  color: var(--color-text-muted);
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: auto;
+}

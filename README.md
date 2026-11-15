@@ -1,4 +1,23 @@
 # DistroYaAdmin
+
+Panel de administración de DistroYa (React + Vite + TypeScript). Hoy trabaja con datos de prueba: la API todavía no existe.
+
+## Para correrlo
+
+```bash
+npm install
+npm run dev
+```
+
+Abre en `http://localhost:5174`. El acceso con Microsoft está simulado y entra sin pedir nada.
+
+## Antes de subir
+
+```bash
+npm run check
+```
+
+Revisa tipos, lint, formato y pruebas.
 DistroYaAdmin
 
 - UC1: Revisar y Aprobar Perfiles de Proveedores
@@ -24,7 +43,7 @@ flowchart TD
         subgraph Col_Admin ["🛡️ ADMINISTRADOR"]
             direction TB
             Admin(["👤 Administrador"]):::actor
-            
+
             UC1["<b>UC1</b><br/>Revisar y Aprobar<br/>Perfiles de Proveedores"]:::adminUC
             UC2["<b>UC2</b><br/>Configurar Planes:<br/>Costo y Duración"]:::adminUC
             UC3["<b>UC3</b><br/>Asignar / Renovar<br/>Suscripciones"]:::adminUC
@@ -35,6 +54,6 @@ flowchart TD
             Admin --> UC3
             Admin --> UC4
         end
-     
+
     end
 ```

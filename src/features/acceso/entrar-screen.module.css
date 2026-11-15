@@ -1,0 +1,32 @@
+.pantalla {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.centro {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-xl);
+  width: 100%;
+  max-width: var(--size-narrow);
+  margin: 0 auto;
+  padding: var(--space-xxxl) var(--space-xl);
+  animation: aparecer var(--duration-slow) var(--easing) both;
+}
+
+.textos {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.mayusculas {
+  text-transform: uppercase;
+}
+
+.boton {
+  align-self: flex-start;
+}

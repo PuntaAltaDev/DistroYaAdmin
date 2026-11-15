@@ -1,0 +1,18 @@
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--size-card), 1fr));
+  gap: var(--space-lg);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lugar fijo para el aviso, así la grilla no salta cuando aparece. */
+.aviso {
+  min-height: var(--space-xl);
+  margin-top: calc(-1 * var(--space-lg));
+}
+
+.textoAviso {
+  animation: aparecer var(--duration-base) var(--easing) both;
+}
