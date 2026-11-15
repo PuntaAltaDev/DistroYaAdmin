@@ -43,7 +43,7 @@ flowchart TD
         subgraph Col_Admin ["🛡️ ADMINISTRADOR"]
             direction TB
             Admin(["👤 Administrador"]):::actor
-            
+
             UC1["<b>UC1</b><br/>Revisar y Aprobar<br/>Perfiles de Proveedores"]:::adminUC
             UC2["<b>UC2</b><br/>Configurar Planes:<br/>Costo y Duración"]:::adminUC
             UC3["<b>UC3</b><br/>Asignar / Renovar<br/>Suscripciones"]:::adminUC
@@ -54,6 +54,6 @@ flowchart TD
             Admin --> UC3
             Admin --> UC4
         end
-     
+
     end
 ```
