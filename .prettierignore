@@ -2,3 +2,5 @@ node_modules
 dist
 package-lock.json
 LICENSE
+# Lo genera Azure al conectar el deploy: no se reformatea.
+.github/workflows
