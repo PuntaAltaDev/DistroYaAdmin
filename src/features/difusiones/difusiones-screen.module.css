@@ -1,0 +1,15 @@
+/* Lugar fijo para el aviso, así la pantalla no salta cuando aparece. */
+.aviso {
+  min-height: var(--space-xl);
+  margin-top: calc(-1 * var(--space-lg));
+}
+
+.textoAviso {
+  animation: aparecer var(--duration-base) var(--easing) both;
+}
+
+.seccion {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}

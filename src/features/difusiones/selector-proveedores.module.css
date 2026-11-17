@@ -1,0 +1,31 @@
+.selector {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.barra {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.acciones {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.lista {
+  max-height: var(--size-lista-max);
+  overflow-y: auto;
+  padding: var(--space-xs);
+  border: var(--border-hairline) solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-background);
+}
+
+.vacio {
+  padding: var(--space-lg) var(--space-md);
+}

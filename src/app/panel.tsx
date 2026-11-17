@@ -25,6 +25,9 @@ export function Panel() {
           <NavLink to="/proveedores" className={({ isActive }) => claseLinkBarra(isActive)}>
             Proveedores
           </NavLink>
+          <NavLink to="/difusiones" className={({ isActive }) => claseLinkBarra(isActive)}>
+            Difusiones
+          </NavLink>
         </>
       }
       derecha={
