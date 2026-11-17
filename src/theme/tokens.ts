@@ -210,6 +210,8 @@ export const sizes = {
   card: 320,
   /** Alto del campo de texto largo (motivo del rechazo). */
   textarea: 112,
+  /** Alto máximo de una lista con scroll (ej.: elegir proveedores). */
+  listaMax: 288,
 } as const;
 
 /** Animaciones: duraciones y curva para que todo se mueva igual. */

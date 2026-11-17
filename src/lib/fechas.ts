@@ -12,3 +12,7 @@ export function haceCuanto(d: Date, ahora = new Date()) {
   if (dias === 1) return 'ayer';
   return `hace ${dias} días`;
 }
+
+/** "14/11/2026 17:30" */
+export const fechaHora = (d: Date) =>
+  `${fechaCorta(d)} ${d.toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit', hour12: false })}`;

@@ -1,0 +1,28 @@
+.casilla {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background-color var(--duration-fast) var(--easing);
+}
+
+.casilla:hover {
+  background: var(--color-surface-alt);
+}
+
+.entrada {
+  flex-shrink: 0;
+  width: var(--size-icon-sm);
+  height: var(--size-icon-sm);
+  margin: var(--space-xxs) 0 0;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
